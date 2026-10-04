@@ -326,7 +326,7 @@ export default function HomePageEn() {
                 </h2>
                 <ul className="mt-3 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                   <li>Programming: Python, C++, TypeScript</li>
-                  <li>AI・ML: Optimization, LLM application development, Agentic AI development, AI safety</li>
+                  <li>AI・ML: Optimization, LLM application development, Agentic AI development, AI safety, PyTorch, Personalization</li>
                   <li>Web &amp; App: React, FastAPI, Next.js (This page was created with Next.js)</li>
                   <li>Hardware &amp; Robotics: Drone programming, Raspberry Pi, Arduino</li>
                 </ul>

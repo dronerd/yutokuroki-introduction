@@ -301,7 +301,7 @@ export default function HomePageJa() {
                 <h2 className="text-xl font-medium">技術スキル</h2>
                 <ul className="mt-3 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                   <li>プログラミング: Python, C++, TypeScript</li>
-                  <li>AI・ML: 最適化、LLMアプリケーション開発、Agentic AI開発、AIセキュリティ</li>
+                  <li>AI・ML: 最適化、LLMアプリケーション開発、Agentic AI開発、AIセキュリティ、PyTorch、Personalization</li>
                   <li>Web・アプリ: React, FastAPI, Next.js（本ページは Next.js で作成）</li>
                   <li>ハードウェア・ロボティクス: ドローンプログラミング、Raspberry Pi、Arduino</li>
                 </ul>

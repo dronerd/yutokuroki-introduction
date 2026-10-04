@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Yuto Kuroki",
-  description: "Profile Page of Yuto Kuroki, Student at Waseda University CS, AI Research & Software Engineering, ISEF2025 Finalist",
+  description: "Profile page of Yuto Kuroki, second-year computer science student at Waseda University working in AI research and development",
   icons: {
     icon: "/favicon.ico",        // ← public/favicon.ico (192x192)
     apple: "/icon.png",       // iOS Safari 対応（任意だが推奨）
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Yuto Kuroki",
-    description: "Profile page of Yuto Kuroki, Student at Waseda University CS, AI Research & Software Engineering, ISEF2025 Finalist",
+    description: "Profile page of Yuto Kuroki, second-year computer science student at Waseda University working in AI research and development",
     images: ["https://yutokuroki.vercel.app/images/profile3.JPG"],
   },
 };

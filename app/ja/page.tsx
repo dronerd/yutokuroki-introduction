@@ -22,11 +22,17 @@ const profileCanvasRows = [
     { src: "/images/canvas13.JPG", alt: "黒木勇人 キャンバス画像 13", tilt: "-rotate-3" },
     { src: "/images/canvas14.jpg", alt: "黒木勇人 キャンバス画像 14", tilt: "rotate-1" },
   ],
+  [
+    { src: "/images/canvas15.jpg", alt: "屋外の彫刻と一緒に写る黒木勇人", tilt: "-rotate-2" },
+    { src: "/images/canvas16.jpg", alt: "研究ポスターの前に立つ黒木勇人", tilt: "rotate-2" },
+    { src: "/images/canvas17.jpg", alt: "水族館の水槽を眺める黒木勇人", tilt: "-rotate-1" },
+    { src: "/images/canvas18.png", alt: "研究室で歩行実験に取り組む黒木勇人", tilt: "rotate-2" },
+  ],
 ];
 
 export const metadata = {
   title: "黒木 勇人",
-  description: "黒木勇人のプロフィールページ：早稲田大学情報理工学科２年、AI研究・ソフトウェア開発、ISEF2025日本代表",
+  description: "黒木勇人のプロフィールページ：早稲田大学情報理工学科2年、AI研究開発",
   openGraph: {
     locale: "ja_JP",
     url: "https://yutokuroki.vercel.app/ja",
@@ -94,7 +100,7 @@ export default function HomePageJa() {
 
               <h1 className="text-2xl sm:text-3xl font-semibold">黒木 勇人</h1>
               <p className="text-base sm:text-lg mt-1">
-                AI研究・ソフトウェア開発 <br/> ISEF2025日本代表
+                AI研究開発
               </p>
 
 
@@ -113,12 +119,12 @@ export default function HomePageJa() {
               <p className="text-sm sm:text-base leading-relaxed px-2 md:px-0">
                 <strong className="block">早稲田大学情報理工学科2年</strong>
                 <span className="block mt-1">
-                  機械学習、LLM、Agentic AI、ソフトウェア開発に関心があります。英語とドイツ語でC2レベルの能力を持っています。
+                  AI for Healthcare、Information Retrieval, Personalization, LLM、Agentic AIに関心があります。英語とドイツ語でC2レベルの能力を持っています。
                 </span>
               </p>
 
               <div className="mt-2 flex flex-col gap-1 text-base">
-                <a href="https://note.com/projectfluence" target="_blank" rel="noopener noreferrer" className="underline">
+                <a href="https://note.com/yutokuroki" target="_blank" rel="noopener noreferrer" className="underline">
                   note
                 </a>
                 <a href="https://github.com/dronerd" target="_blank" rel="noopener noreferrer" className="underline">
@@ -138,16 +144,18 @@ export default function HomePageJa() {
           <section className="w-full md:w-3/4 md:ml-8 p-4 md:p-6 mt-6 md:mt-0">
             <section>
               <h2 className="text-xl font-medium">自己紹介</h2>
-              <p className="mt-3 leading-7 text-neutral-800 text-sm sm:text-base">
-                <strong>国際科学コンテスト、ソフトウェア開発、異文化交流</strong>
-                を経験してきました。
-                日本代表として<strong>ISEF2025</strong>に出場し、現在は
-                <strong>機械学習</strong>、<strong>大規模言語モデル（LLM）</strong>、
-                <strong>Agentic AI</strong>、<strong>医療分野へのAI応用</strong>
-                に強い関心を持っています。
-                テクノロジーによって世界の課題を解決することに情熱を持ち、
-                国際的な交流活動にも積極的に取り組んでいます。
-              </p>
+              <div className="mt-3 space-y-3 leading-7 text-neutral-800 text-sm sm:text-base">
+                <p><strong>AI研究を通じて世界の課題解決に貢献することに情熱を注ぎ、国際的に活躍する研究者を目指しています。</strong></p>
+                <p>
+                  高校時代には、ドローンによる医療物資配送を最適化するアルゴリズムの研究に取り組み、大学1年次には日本代表として<strong>国際学生科学技術フェア（ISEF 2025）</strong>に出場しました。また、<strong>文部科学大臣特別賞</strong>を受賞しています。
+                </p>
+                <p>
+                  Rakuten AI for Businessでは、国際的なチームの一員としてAgentic AIの研究に携わりました。大学2年次の夏には、中谷財団の奨学生として、ジョージア工科大学で時系列深層学習モデルや、モデルの個人適応の研究に取り組みました。
+                </p>
+                <p>
+                  英語とドイツ語は、ともにネイティブに近い上級レベルまで習得しています。これらの語学力を生かし、多様な背景を持つ研究者と協働しながら、社会に役立つAIの研究に挑戦していきたいと考えています。
+                </p>
+              </div>
               <br />
 
               <h2 className="text-xl font-medium flex items-center gap-2">
@@ -161,29 +169,8 @@ export default function HomePageJa() {
                 <Link aria-label="Project Fluence" href="https://projectfluence.vercel.app" className="underline" target="_blank">
                   <strong>Project Fluence</strong>
                 </Link>
-                は私の英語学習ノウハウを活用したAIアプリが連携して学習体験を最適化する、英語学習のプラットフォームです。
-                英語力とそれぞれの専門性を活かし、日本から世界へ挑戦する人を増やすことを目指しています。
-                AI英語学習アプリの開発や、noteでの記事執筆を行っています。
-                ぜひご覧ください!
+                は私の英語学習ノウハウを活用した英語学習のプラットフォームです。英語力とそれぞれの専門性を活かし、日本から世界へ挑戦する人を増やすことを目指し、開発しました。ぜひご覧ください！
               </p>
-
-              {/* Latest activities */}
-              <h2 className="mt-6 text-xl font-medium">現在の活動</h2>
-              <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
-                <li>
-                  Nakatani RIESプログラムを通じた<strong>アメリカのジョージア工科大学EPIC Lab</strong>での研究インターンシップ。<strong>ロボット外骨格のためのディープラーニング</strong>について研究
-                </li>
-                <li>
-                  NSSスタッフとして{" "}
-                  <a className="underline" href="https://www.societyforscience.org/isef/" target="_blank" rel="noopener noreferrer">
-                    ISEF2026
-                  </a>
-                  日本代表のサポート
-                </li>
-                <li>
-                  Project Fluence の英語学習アプリ開発
-                </li>
-              </ul>
             </section>
 
             {/* Photo Canvas */}
@@ -203,7 +190,7 @@ export default function HomePageJa() {
                             alt={image.alt}
                             fill
                             sizes="96px"
-                            className="object-cover"
+                            className={`object-cover ${image.src === "/images/canvas18.png" ? "object-top" : ""}`}
                           />
                         </div>
                       ))}
@@ -218,35 +205,35 @@ export default function HomePageJa() {
               <h2 className="text-xl font-medium">今後の活動</h2>
               <ul className="mt-3 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li>
-                  2026年10月13日：　<strong>TEDx WUSHS Youth Event</strong>にて登壇予定。
+                  2026年10月31日：　<strong>TEDx WUSHS Youth Event</strong>にて登壇予定。
                 </li>
               </ul>
 
               {/* Latest note articles */}
-              <h2 className="mt-6 text-xl font-medium">最近執筆したnote記事</h2>
+              <h2 className="mt-6 text-xl font-medium">note記事</h2>
               <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li key="note Article1" className="py-0.5">
-                    <a href="https://note.com/projectfluence/n/n05e8b127014f" className="underline" target="_blank" rel="noopener noreferrer">
+                    <a href="https://note.com/yutokuroki/n/n05e8b127014f" className="underline" target="_blank" rel="noopener noreferrer">
                       大学生の自己紹介 ― 黒木勇人｜Project Fluence｜英語アプリ｜英検１級・TOEIC満点・TOEFL116/120・ドイツ語上級
                     </a>
                 </li>
                 <li key="note Article2" className="py-0.5">
-                    <a href="https://note.com/projectfluence/n/nd806d6fa00ec" className="underline" target="_blank" rel="noopener noreferrer">
+                    <a href="https://note.com/yutokuroki/n/nd806d6fa00ec" className="underline" target="_blank" rel="noopener noreferrer">
                       日本にいながらネイティブ級へ─英語力を効果的に伸ばす学習方法｜英検１級・TOEIC満点・TOEFL116/120・ドイツ語上級
                     </a>
                 </li>
                 <li key="note Article3" className="py-0.5">
-                    <a href="https://note.com/projectfluence/n/n751ab984987a" className="underline" target="_blank" rel="noopener noreferrer">
+                    <a href="https://note.com/yutokuroki/n/n751ab984987a" className="underline" target="_blank" rel="noopener noreferrer">
                       英語学習にも応用できる！第２外国語（ドイツ語）から見えてきた効果的な言語学習法
                     </a>
                 </li>  
                 <li key="note Article4" className="py-0.5">
-                    <a href="https://note.com/projectfluence/n/nb5ee0137b415" className="underline" target="_blank" rel="noopener noreferrer">
+                    <a href="https://note.com/yutokuroki/n/nb5ee0137b415" className="underline" target="_blank" rel="noopener noreferrer">
                       世界最難関の英語検定試験：ケンブリッジ英検C2 Proficiency（CPE）に合格しました！（リーディング・リスニング満点）
                     </a>
                 </li> 
                 <li key ="note Article5" className="py-0.5">
-                    <a href="https://note.com/projectfluence/n/n71bd9003af29" className="underline" target="_blank" rel="noopener noreferrer">
+                    <a href="https://note.com/yutokuroki/n/n71bd9003af29" className="underline" target="_blank" rel="noopener noreferrer">
                     （上級者向け）日本にいながら英語力をさらに高める効果的な方法
                     </a>
                 </li>
@@ -257,6 +244,9 @@ export default function HomePageJa() {
             <section className="mt-6">
               <h2 className="text-xl font-medium">研究・受賞歴</h2>
               <ul className="mt-3 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
+                <li>
+                  <strong>Nakatani RIES Scholar, Best Presentation Award</strong> — 中谷財団の奨学生としてジョージア工科大学で研究
+                </li>
                 <li>
                   <a href="https://isef.net/project/robo024-novel-medical-drone-delivery-using-k-means-and-tsp" target="_blank" rel="noopener noreferrer" className="underline">
                     <strong>ISEF 2025 ファイナリスト</strong>
@@ -292,7 +282,7 @@ export default function HomePageJa() {
               <h2 className="mt-6 text-xl font-medium">受賞・栄誉</h2>
               <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li>
-                  <strong>大隈記念奨学金（基幹理工学部）奨学生</strong>（早稲田大学基幹理工学部、2026年7月）— 2〜4年生約1,800名のうち、学業成績を重視した選考により6名の奨学生に採用。1年次累積GPAは3.94/4.00。年額40万円。
+                  <strong>大隈記念奨学金（基幹理工学部）奨学生</strong> — 2〜4年生約1,800名のうち6名の奨学生に採用。1年次累積GPA3.94/4.00。
                 </li>
                 <li>
                   <a href="https://www.mext.go.jp/b_menu/houdou/2025/1416581_00001.htm" target="_blank" rel="noopener noreferrer" className="underline">
@@ -349,6 +339,9 @@ export default function HomePageJa() {
               </h2>
               <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li>
+                  <strong>中谷RIES奨学生</strong> — ジョージア工科大学のEPIC Labで研究を行い、脳卒中経験者のリハビリテーションに向けた時系列深層学習モデルと個人適応手法を開発。
+                </li>
+                <li>
                   <strong>データサイエンティストインターン（楽天AI for Business）</strong>
                   （2026年2月3日〜2026年3月31日）— エージェント型AIの安全性に関する研究を実施し、AIエージェントの評価実験の設計・実行を担当。成果をチーム全体に向けて発表。英語を主言語とする国際的な環境で協働した。
                 </li>
@@ -394,8 +387,7 @@ export default function HomePageJa() {
               <h2 className="mt-6 text-xl font-medium">過去の活動・発表</h2>
               <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li>
-                  2026年1月〜3月 <strong>GTIE Student Entrepreneurship Program</strong>参加  
-                  早稲田大学および文部科学省による全額支援のもと選抜参加者として採択され、Cambridge Innovation Center、MIT、Harvard University等におけるネットワーキング
+                  <strong>GTIE Student Entrepreneurship Program</strong> 早稲田大学および文部科学省による支援のもとCIC、MIT、Harvard Universityにおけるネットワーキング
                 </li>
                 <li>早稲田大学高等学院 硬式テニス部</li>
                 <li>Toshiba Youth Club Asia（チームリーダー）</li>

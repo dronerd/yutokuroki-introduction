@@ -22,11 +22,17 @@ const profileCanvasRows = [
     { src: "/images/canvas13.JPG", alt: "Yuto Kuroki canvas image 13", tilt: "-rotate-3" },
     { src: "/images/canvas14.jpg", alt: "Yuto Kuroki canvas image 14", tilt: "rotate-1" },
   ],
+  [
+    { src: "/images/canvas15.jpg", alt: "Yuto Kuroki with outdoor sculptures", tilt: "-rotate-2" },
+    { src: "/images/canvas16.jpg", alt: "Yuto Kuroki beside a research poster", tilt: "rotate-2" },
+    { src: "/images/canvas17.jpg", alt: "Yuto Kuroki looking at an aquarium tank", tilt: "-rotate-1" },
+    { src: "/images/canvas18.png", alt: "Yuto Kuroki during a gait experiment in a research lab", tilt: "rotate-2" },
+  ],
 ];
 
 export const metadata = {
   title: "Yuto Kuroki",
-  description: "Profile page of Yuto Kuroki, Student at Waseda University CS, AI Research & Software Engineering, ISEF2025 Finalist",
+  description: "Profile page of Yuto Kuroki, second-year computer science student at Waseda University working in AI research and development",
   openGraph: {
     locale: "en_US",
     url: "https://yutokuroki.vercel.app",
@@ -96,7 +102,7 @@ export default function HomePageEn() {
 
               <h1 className="text-2xl sm:text-3xl font-semibold">Yuto Kuroki</h1>
               <p className="text-base sm:text-lg mt-1">
-                AI reserach & Software Engineering <br/> ISEF 2025 Finalist
+                AI Research and Development
               </p>
 
               {/* Profile image — fixed-size */}
@@ -116,12 +122,12 @@ export default function HomePageEn() {
                   Second Year student at Waseda University School of Computer Science and Engineering
                 </strong>
                 <span className="block mt-1">
-                  Interested in ML, LLMs, Agentic AI, and Software Engineering. English C2 and German C2 proficiency.
+                  Interested in AI for Healthcare, Information Retrieval, Personalization, LLMs, and Agentic AI. English C2 and German C2 proficiency.
                 </span>
               </p>
 
               <div className="mt-2 flex flex-col gap-1 text-base">
-                <a href="https://note.com/projectfluence" target="_blank" rel="noopener noreferrer" className="underline">
+                <a href="https://note.com/yutokuroki" target="_blank" rel="noopener noreferrer" className="underline">
                   note
                 </a>
                 <a href="https://github.com/dronerd" target="_blank" rel="noopener noreferrer" className="underline">
@@ -143,10 +149,18 @@ export default function HomePageEn() {
               <h2 className="text-xl font-medium">
                 <strong>About Me</strong>
               </h2>
-              <p className="mt-3 leading-7 text-neutral-800 text-sm sm:text-base">
-                My experiences span <strong>international science competitions, software development, public speaking, and cross-cultural programs. </strong>
-                I have represented Japan at <strong>ISEF</strong> and currently have a strong interest in <strong>machine learning</strong>, <strong>large language models</strong>, <strong>Agentic AI</strong>, and <strong>AI for healthcare</strong>. I am passionate about leveraging technology to solve real-world problems and am actively involved in cross cultural exchange.
-              </p>
+              <div className="mt-3 space-y-3 leading-7 text-neutral-800 text-sm sm:text-base">
+                <p><strong>I am passionate about using AI research to help solve global challenges, and I aspire to become a researcher working internationally.</strong></p>
+                <p>
+                  In high school, I researched algorithms to optimize drone delivery of medical supplies. In my first year at university, I represented Japan at the <strong>International Science and Engineering Fair (ISEF 2025)</strong>. I also received the <strong>Special Award from the Minister of Education, Culture, Sports, Science and Technology</strong>.
+                </p>
+                <p>
+                  At Rakuten AI for Business, I researched Agentic AI as part of an international team. During the summer of my second year at university, I was a Nakatani Foundation scholar at the Georgia Institute of Technology, where I researched deep learning models for time series and model personalization.
+                </p>
+                <p>
+                  I have reached a near-native advanced level in both English and German. I hope to use these language skills to collaborate with researchers from diverse backgrounds and pursue AI research that benefits society.
+                </p>
+              </div>
               <br/>
 
               <h2 className="text-xl font-medium flex items-center gap-2">
@@ -158,32 +172,11 @@ export default function HomePageEn() {
               </h2>
 
               <p className="mt-3 leading-7 text-neutral-800 text-sm sm:text-base">
-                I founded{" "}
                 <Link aria-label="Project Fluence" href="https://projectfluence.vercel.app" className="underline" target="_blank">
                   <strong>Project Fluence</strong>
                 </Link>{" "}
-                , an AI-powered platform to help more people in Japan achieve their dreams through English skills and their areas of expertise. I personally create English learning AI apps and write note articles. Feel free to check them out!
+                is an English learning platform built on my own experience and methods for learning English. I developed it to help more people in Japan take on opportunities around the world by using their English skills and individual expertise. Please take a look!
               </p>
-
-              {/* Latest activities */}
-              <h2 className="mt-6 text-xl font-medium">
-                <strong>Ongoing Activities</strong>
-              </h2>
-              <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
-                <li>
-                  Research internship at the <strong>Georgia Institute of Technology EPIC Lab</strong> through the Nakatani RIES Program, focusing on <strong>deep learning for robotic exoskeletons</strong>
-                </li>
-                <li>
-                  Supporting {" "} 
-                  <a className="underline" href="https://www.societyforscience.org/isef/" target="_blank" rel="noopener noreferrer">
-                    ISEF2026
-                  </a>
-                  {" "} finalists from Japan as NSS staff member 
-                </li>
-                <li>
-                  Development of English learning apps for Project Fluence{" "}
-                </li>
-              </ul>
             </section>
 
             {/* Photo Canvas */}
@@ -205,7 +198,7 @@ export default function HomePageEn() {
                             alt={image.alt}
                             fill
                             sizes="96px"
-                            className="object-cover"
+                            className={`object-cover ${image.src === "/images/canvas18.png" ? "object-top" : ""}`}
                           />
                         </div>
                       ))}
@@ -222,37 +215,37 @@ export default function HomePageEn() {
               </h2>
               <ul className="mt-3 list-disc pl-6 text-neutral-800 text-sm sm:text-base">        
                 <li>
-                  October 13, 2026: Scheduled to speak at <strong>TEDx WUSHS Youth Event</strong>.
+                  October 31, 2026: Scheduled to speak at <strong>TEDx WUSHS Youth Event</strong>.
                 </li>
               </ul>
 
             {/* Latest note articles */}
               <h2 className="mt-6 text-xl font-medium">
-                <strong>Latest note Articles</strong>
+                <strong>note articles</strong>
               </h2>
               <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li key="note Article1" className="py-0.5">
-                    <a href="https://note.com/projectfluence/n/n05e8b127014f" className="underline" target="_blank" rel="noopener noreferrer">
+                    <a href="https://note.com/yutokuroki/n/n05e8b127014f" className="underline" target="_blank" rel="noopener noreferrer">
                       大学生の自己紹介 ― 黒木勇人｜Project Fluence｜英語アプリ｜英検１級・TOEIC満点・TOEFL116/120・ドイツ語上級
                     </a>
                 </li>
                 <li key="note Article2" className="py-0.5">
-                    <a href="https://note.com/projectfluence/n/nd806d6fa00ec" className="underline" target="_blank" rel="noopener noreferrer">
+                    <a href="https://note.com/yutokuroki/n/nd806d6fa00ec" className="underline" target="_blank" rel="noopener noreferrer">
                       日本にいながらネイティブ級へ─英語力を効果的に伸ばす学習方法｜英検１級・TOEIC満点・TOEFL116/120・ドイツ語上級
                     </a>
                 </li>
                 <li key="note Article3" className="py-0.5">
-                    <a href="https://note.com/projectfluence/n/n751ab984987a" className="underline" target="_blank" rel="noopener noreferrer">
+                    <a href="https://note.com/yutokuroki/n/n751ab984987a" className="underline" target="_blank" rel="noopener noreferrer">
                       英語学習にも応用できる！第２外国語（ドイツ語）から見えてきた効果的な言語学習法
                     </a>
                 </li>  
                 <li key="note Article4" className="py-0.5">
-                    <a href="https://note.com/projectfluence/n/nb5ee0137b415" className="underline" target="_blank" rel="noopener noreferrer">
+                    <a href="https://note.com/yutokuroki/n/nb5ee0137b415" className="underline" target="_blank" rel="noopener noreferrer">
                       世界最難関の英語検定試験：ケンブリッジ英検C2 Proficiency（CPE）に合格しました！（リーディング・リスニング満点）
                     </a>
                 </li>  
                 <li key ="note Article5" className="py-0.5">
-                    <a href="https://note.com/projectfluence/n/n71bd9003af29" className="underline" target="_blank" rel="noopener noreferrer">
+                    <a href="https://note.com/yutokuroki/n/n71bd9003af29" className="underline" target="_blank" rel="noopener noreferrer">
                     （上級者向け）日本にいながら英語力をさらに高める効果的な方法
                     </a>
                 </li>
@@ -266,6 +259,9 @@ export default function HomePageEn() {
               </h2>
 
               <ul className="mt-3 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
+                <li>
+                  <strong>Nakatani RIES Scholar, Best Presentation Award</strong> — Conducted research at the Georgia Institute of Technology as a Nakatani Foundation scholar
+                </li>
                 <li>
                   <a
                     href="https://isef.net/project/robo024-novel-medical-drone-delivery-using-k-means-and-tsp"
@@ -308,7 +304,7 @@ export default function HomePageEn() {
               </h2>
               <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li>
-                  <strong>Okuma Memorial Scholarship Recipient</strong> (Waseda University School of Fundamental Science and Engineering, July 2026) — Selected as one of six recipients from approximately 1,800 second- to fourth-year students, primarily based on academic achievement and a first-year cumulative GPA of 3.94/4.00. Annual award: ¥400,000.
+                  <strong>Okuma Memorial Scholarship Recipient (School of Fundamental Science and Engineering)</strong> — Selected as one of six scholarship recipients among approximately 1,800 second- to fourth-year students. First-year cumulative GPA: 3.94/4.00.
                 </li>
                 <li>
                   <a href="https://www.mext.go.jp/b_menu/houdou/2025/1416581_00001.htm" target="_blank" rel="noopener noreferrer" className="underline">
@@ -372,6 +368,9 @@ export default function HomePageEn() {
               </h2>
               <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li>
+                  <strong>Nakatani RIES Scholar</strong> — Conducted research at Georgia Tech&apos;s EPIC Lab, developing temporal deep learning models and personalization methods for stroke survivor rehabilitation.
+                </li>
+                <li>
                   <strong>Data Scientist Intern, Rakuten AI for Business</strong> (Feb 3, 2026 – Mar 31, 2026) — Conducted research on agentic AI safety, designed and executed evaluation experiments for AI agents, and presented findings to the full team. Collaborated in an international environment with English as the primary working language.
                 </li>
 
@@ -414,8 +413,7 @@ export default function HomePageEn() {
               </h2>
               <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li>
-                  <strong>GTIE Student Entrepreneurship Program</strong> (January 2026 ~ March 2026) 
-                  — Selected participant with full financial support from Waseda University and MEXT; engaged with leading innovation ecosystems through networking at Cambridge Innovation Center, MIT, and Harvard University
+                  <strong>GTIE Student Entrepreneurship Program</strong> — Networking at CIC, MIT, and Harvard University with support from Waseda University and MEXT.
                 </li>
                 <li>Waseda University Senior Highschool Tennis club</li>
                 <li>Toshiba Youth Club Asia (Team Leader)</li>

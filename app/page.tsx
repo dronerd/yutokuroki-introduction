@@ -368,7 +368,7 @@ export default function HomePageEn() {
               </h2>
               <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li>
-                  <strong>Nakatani RIES Scholar</strong> — Conducted research at Georgia Tech&apos;s EPIC Lab, developing temporal deep learning models and personalization methods for stroke survivor rehabilitation.
+                  <strong>Research Intern, Georgia Institute of Technology</strong> (Remote research: May 2026–August | On-site: Aug. 10–Sept. 23, 2026) — Conducted research at EPIC Lab, developing temporal deep learning models and personalization methods for stroke survivor rehabilitation.
                 </li>
                 <li>
                   <strong>Data Scientist Intern, Rakuten AI for Business</strong> (Feb 3, 2026 – Mar 31, 2026) — Conducted research on agentic AI safety, designed and executed evaluation experiments for AI agents, and presented findings to the full team. Collaborated in an international environment with English as the primary working language.

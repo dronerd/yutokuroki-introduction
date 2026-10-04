@@ -339,7 +339,7 @@ export default function HomePageJa() {
               </h2>
               <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li>
-                  <strong>中谷RIES奨学生</strong> — ジョージア工科大学のEPIC Labで研究を行い、脳卒中経験者のリハビリテーションに向けた時系列深層学習モデルと個人適応手法を開発。
+                  <strong>研究インターン（ジョージア工科大学）</strong>（リモート研究：2026年5月〜8月｜現地：2026年8月10日〜9月23日）— EPIC Labで研究を行い、脳卒中経験者のリハビリテーションに向けた時系列深層学習モデルと個人適応手法を開発。
                 </li>
                 <li>
                   <strong>データサイエンティストインターン（楽天AI for Business）</strong>

@@ -158,6 +158,9 @@ export default function HomePageEn() {
                   At Rakuten AI for Business, I researched Agentic AI as part of an international team. During the summer of my second year at university, I was a Nakatani Foundation scholar at the Georgia Institute of Technology, where I researched deep learning models for time series and model personalization.
                 </p>
                 <p>
+                  I was selected for the <strong>Nakatani RIES Best Poster Presentation Award</strong>. I was also selected as a <strong>Nakatani ARIP Scholar</strong> and plan to conduct research at the German Research Center for Artificial Intelligence (DFKI) from February 2 to April 7, 2027.
+                </p>
+                <p>
                   I have reached a near-native advanced level in both English and German. I hope to use these language skills to collaborate with researchers from diverse backgrounds and pursue AI research that benefits society.
                 </p>
               </div>
@@ -260,7 +263,13 @@ export default function HomePageEn() {
 
               <ul className="mt-3 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li>
-                  <strong>Nakatani RIES Scholar, Best Presentation Award</strong> — Conducted research at the Georgia Institute of Technology as a Nakatani Foundation scholar
+                  <strong>Nakatani RIES Scholar</strong> — Conducted research at the Georgia Institute of Technology as a Nakatani Foundation scholar
+                </li>
+                <li>
+                  Selected for the <strong>Nakatani RIES Best Poster Presentation Award</strong>
+                </li>
+                <li>
+                  <strong>Nakatani ARIP Scholar</strong> — Selected as a scholar; plan to conduct research at the German Research Center for Artificial Intelligence (DFKI) from February 2 to April 7, 2027
                 </li>
                 <li>
                   <a

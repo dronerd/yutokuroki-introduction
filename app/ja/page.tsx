@@ -153,6 +153,9 @@ export default function HomePageJa() {
                   Rakuten AI for Businessでは、国際的なチームの一員としてAgentic AIの研究に携わりました。大学2年次の夏には、中谷財団の奨学生として、ジョージア工科大学で時系列深層学習モデルや、モデルの個人適応の研究に取り組みました。
                 </p>
                 <p>
+                  <strong>Nakatani RIES Best Poster Presentation Award</strong>に選出されました。また、<strong>Nakatani ARIP奨学生</strong>に選出され、2027年2月2日から4月7日までドイツ人工知能研究所（DFKI）で研究を行う予定です。
+                </p>
+                <p>
                   英語とドイツ語は、ともにネイティブに近い上級レベルまで習得しています。これらの語学力を生かし、多様な背景を持つ研究者と協働しながら、社会に役立つAIの研究に挑戦していきたいと考えています。
                 </p>
               </div>
@@ -245,7 +248,13 @@ export default function HomePageJa() {
               <h2 className="text-xl font-medium">研究・受賞歴</h2>
               <ul className="mt-3 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li>
-                  <strong>Nakatani RIES Scholar, Best Presentation Award</strong> — 中谷財団の奨学生としてジョージア工科大学で研究
+                  <strong>Nakatani RIES Scholar</strong> — 中谷財団の奨学生としてジョージア工科大学で研究
+                </li>
+                <li>
+                  <strong>Nakatani RIES Best Poster Presentation Award</strong>に選出
+                </li>
+                <li>
+                  <strong>Nakatani ARIP奨学生</strong>に選出 — 2027年2月2日から4月7日までドイツ人工知能研究所（DFKI）で研究を行う予定
                 </li>
                 <li>
                   <a href="https://isef.net/project/robo024-novel-medical-drone-delivery-using-k-means-and-tsp" target="_blank" rel="noopener noreferrer" className="underline">

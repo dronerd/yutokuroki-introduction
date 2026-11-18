@@ -203,16 +203,8 @@ export default function HomePageJa() {
               </div>
             </section>
 
-            {/* Upcoming Activities */}
+            {/* Note Articles */}
             <section className="mt-6">
-              <h2 className="text-xl font-medium">今後の活動</h2>
-              <ul className="mt-3 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
-                <li>
-                  2026年10月31日：　<strong>TEDx WUSHS Youth Event</strong>にて登壇予定。
-                </li>
-              </ul>
-
-              {/* Latest note articles */}
               <h2 className="mt-6 text-xl font-medium">note記事</h2>
               <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li key="note Article1" className="py-0.5">
@@ -395,6 +387,9 @@ export default function HomePageJa() {
 
               <h2 className="mt-6 text-xl font-medium">過去の活動・発表</h2>
               <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
+                <li>
+                  2026年10月31日 — <strong>TEDx WUSHS Youth Event</strong>にて登壇。
+                </li>
                 <li>
                   <strong>GTIE Student Entrepreneurship Program</strong> 早稲田大学および文部科学省による支援のもとCIC、MIT、Harvard Universityにおけるネットワーキング
                 </li>

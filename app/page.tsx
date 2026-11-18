@@ -211,18 +211,8 @@ export default function HomePageEn() {
               </div>
             </section>
 
-            {/* Upcoming Activities & Articles */}
+            {/* Note Articles */}
             <section className="mt-6">
-              <h2 className="text-xl font-medium">
-                <strong>Upcoming Activities</strong>
-              </h2>
-              <ul className="mt-3 list-disc pl-6 text-neutral-800 text-sm sm:text-base">        
-                <li>
-                  October 31, 2026: Scheduled to speak at <strong>TEDx WUSHS Youth Event</strong>.
-                </li>
-              </ul>
-
-            {/* Latest note articles */}
               <h2 className="mt-6 text-xl font-medium">
                 <strong>note articles</strong>
               </h2>
@@ -421,6 +411,9 @@ export default function HomePageEn() {
                 <strong>Past Activities & Presentations</strong>
               </h2>
               <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
+                <li>
+                  October 31, 2026 — Spoke at <strong>TEDx WUSHS Youth Event</strong>.
+                </li>
                 <li>
                   <strong>GTIE Student Entrepreneurship Program</strong> — Networking at CIC, MIT, and Harvard University with support from Waseda University and MEXT.
                 </li>

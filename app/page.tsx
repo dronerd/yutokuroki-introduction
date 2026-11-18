@@ -18,7 +18,7 @@ export default function HomePageEn() {
   return (
     <>
       {/* Sticky Banner */}
-      <div className="w-full sticky top-0 z-50 bg-gradient-to-r from-blue-950 to-blue-900 text-white">
+      <div className="w-full sticky top-0 z-50 bg-gradient-to-r from-slate-700 to-slate-600 text-white">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center relative md:pr-24 lg:pr-8 xl:pr-0">
           {/* ページトップ */}
           <a
@@ -41,7 +41,7 @@ export default function HomePageEn() {
               href="https://www.linkedin.com/in/yutokuroki/"
               target="_blank"
               rel="noreferrer"
-              className="px-3 py-2 text-sm md:text-base font-medium text-white bg-blue-800/70 rounded-full shadow-sm transition-transform duration-200 hover:bg-blue-800/90 hover:scale-105 whitespace-nowrap"
+              className="px-3 py-2 text-sm md:text-base font-medium text-white bg-slate-800/70 rounded-full shadow-sm transition-transform duration-200 hover:bg-slate-800/90 hover:scale-105 whitespace-nowrap"
               aria-label="external link: LinkedIn"
             >
               <span className="inline lg:hidden">LinkedIn</span>
@@ -53,7 +53,7 @@ export default function HomePageEn() {
               href="https://note.com/yutokuroki"
               target="_blank"
               rel="noreferrer"
-              className="px-3 py-2 text-sm md:text-base font-medium text-white bg-blue-800/70 rounded-full shadow-sm transition-transform duration-200 hover:bg-blue-800/90 hover:scale-105 whitespace-nowrap"
+              className="px-3 py-2 text-sm md:text-base font-medium text-white bg-slate-800/70 rounded-full shadow-sm transition-transform duration-200 hover:bg-slate-800/90 hover:scale-105 whitespace-nowrap"
               aria-label="external link: note"
             >
               <span className="inline md:hidden">note</span>

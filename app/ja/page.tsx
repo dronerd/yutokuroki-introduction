@@ -17,7 +17,7 @@ export default function HomePageJa() {
   return (
     <>
       {/* Sticky Banner */}
-      <div className="w-full sticky top-0 z-50 bg-gradient-to-r from-indigo-600 to-cyan-500 text-white">
+      <div className="w-full sticky top-0 z-50 bg-gradient-to-r from-slate-700 to-slate-600 text-white">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center relative md:pr-24 lg:pr-8 xl:pr-0">
           {/* ページトップ */}
           <a
@@ -40,29 +40,29 @@ export default function HomePageJa() {
               href="https://www.linkedin.com/in/yutokuroki/"
               target="_blank"
               rel="noreferrer"
-              className="px-3 py-2 text-sm md:text-base font-medium text-white bg-blue-900 rounded-full shadow-md transition-transform duration-200 hover:bg-blue-700 hover:scale-105 whitespace-nowrap"
+              className="px-3 py-2 text-sm md:text-base font-medium text-white bg-slate-800/70 rounded-full shadow-sm transition-transform duration-200 hover:bg-slate-800/90 hover:scale-105 whitespace-nowrap"
               aria-label="外部リンク: LinkedIn"
             >
               <span className="inline lg:hidden">LinkedIn</span>
               <span className="hidden lg:inline">LinkedInを見る</span>
             </a>
 
-            {/* GitHub */}
+            {/* note */}
             <a
-              href="https://github.com/dronerd"
+              href="https://note.com/yutokuroki"
               target="_blank"
               rel="noreferrer"
-              className="px-3 py-2 text-sm md:text-base font-medium text-white bg-blue-900 rounded-full shadow-md transition-transform duration-200 hover:bg-blue-700 hover:scale-105 whitespace-nowrap"
-              aria-label="外部リンク: GitHub"
+              className="px-3 py-2 text-sm md:text-base font-medium text-white bg-slate-800/70 rounded-full shadow-sm transition-transform duration-200 hover:bg-slate-800/90 hover:scale-105 whitespace-nowrap"
+              aria-label="外部リンク: note"
             >
-              <span className="inline md:hidden">GitHub</span>
-              <span className="hidden md:inline">GitHubを見る</span>
+              <span className="inline md:hidden">note</span>
+              <span className="hidden md:inline">noteを読む</span>
             </a>
           </div>
         </div>
       </div>
       
-      <main id="top" className="w-full min-h-screen bg-neutral-100 px-4 sm:px-6 pt-4 pb-12">
+      <main id="top" className="w-full min-h-screen bg-neutral-50 px-4 sm:px-6 pt-4 pb-12">
         <div className="flex flex-col md:flex-row w-full relative">
           {/* LEFT COLUMN */}
           <aside className="w-full md:w-1/4 md:sticky top-10 self-start p-4 md:p-6 bg-white md:bg-transparent rounded-lg md:rounded-none shadow-sm md:shadow-none text-center md:text-left">
@@ -176,12 +176,15 @@ export default function HomePageJa() {
             {/* Past App Projects */}
             <section className="mt-6">
               <h2 className="text-xl font-medium">過去に開発したアプリ</h2>
-              <p className="mt-2 text-sm leading-6 text-neutral-700">
-                <Link href="https://projectfluence.vercel.app" target="_blank" rel="noopener noreferrer" className="font-medium underline">
-                  Project Fluence
-                </Link>
-                は、私が開発した英語学習プラットフォームです。
-              </p>
+              <ul className="mt-2 list-disc pl-6 text-neutral-800 text-base">
+                <li className="py-0.5">
+                  <Link href="https://projectfluence.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 align-middle underline">
+                    <Image src="/images/logo.png" alt="" width={32} height={32} className="rounded-md object-cover" />
+                    <strong>Project Fluence</strong>
+                  </Link>
+                  は、私が開発した英語学習プラットフォームです。
+                </li>
+              </ul>
             </section>
 
             {/* Research & Awards */}

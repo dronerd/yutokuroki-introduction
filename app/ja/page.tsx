@@ -3,33 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import LanguageToggle from "../components/LanguageToggle"; // client component
 
-const profileCanvasRows = [
-  [
-    { src: "/images/canvas1.jpg", alt: "黒木勇人 キャンバス画像 1", tilt: "-rotate-3" },
-    { src: "/images/canvas2.JPEG", alt: "黒木勇人 キャンバス画像 2", tilt: "rotate-2" },
-    { src: "/images/canvas3.JPG", alt: "黒木勇人 キャンバス画像 3", tilt: "-rotate-1" },
-    { src: "/images/canvas4.JPG", alt: "黒木勇人 キャンバス画像 4", tilt: "rotate-3" },
-    { src: "/images/canvas5.JPG", alt: "黒木勇人 キャンバス画像 5", tilt: "-rotate-2" },
-    { src: "/images/canvas6.png", alt: "黒木勇人 キャンバス画像 6", tilt: "rotate-2" },
-    { src: "/images/canvas7.JPG", alt: "黒木勇人 キャンバス画像 7", tilt: "-rotate-3" },
-  ],
-  [
-    { src: "/images/canvas8.JPG", alt: "黒木勇人 キャンバス画像 8", tilt: "rotate-1" },
-    { src: "/images/canvas9.JPG", alt: "黒木勇人 キャンバス画像 9", tilt: "-rotate-2" },
-    { src: "/images/canvas10.JPG", alt: "黒木勇人 キャンバス画像 10", tilt: "rotate-3" },
-    { src: "/images/canvas11.png", alt: "黒木勇人 キャンバス画像 11", tilt: "-rotate-1" },
-    { src: "/images/canvas12.JPG", alt: "黒木勇人 キャンバス画像 12", tilt: "rotate-2" },
-    { src: "/images/canvas13.JPG", alt: "黒木勇人 キャンバス画像 13", tilt: "-rotate-3" },
-    { src: "/images/canvas14.jpg", alt: "黒木勇人 キャンバス画像 14", tilt: "rotate-1" },
-  ],
-  [
-    { src: "/images/canvas15.jpg", alt: "屋外の彫刻と一緒に写る黒木勇人", tilt: "-rotate-2" },
-    { src: "/images/canvas16.jpg", alt: "研究ポスターの前に立つ黒木勇人", tilt: "rotate-2" },
-    { src: "/images/canvas17.jpg", alt: "水族館の水槽を眺める黒木勇人", tilt: "-rotate-1" },
-    { src: "/images/canvas18.png", alt: "研究室で歩行実験に取り組む黒木勇人", tilt: "rotate-2" },
-  ],
-];
-
 export const metadata = {
   title: "黒木 勇人",
   description: "黒木勇人のプロフィールページ：早稲田大学情報理工学科2年、AI研究開発",
@@ -161,33 +134,6 @@ export default function HomePageJa() {
               </div>
             </section>
 
-            {/* Photo Canvas */}
-            <section className="mt-6">
-              <h2 className="text-xl font-medium">フォトキャンバス</h2>
-              <div className="mt-3 max-w-3xl rounded-lg bg-white px-3 py-4 shadow-sm">
-                <div className="space-y-2 overflow-x-auto py-1">
-                  {profileCanvasRows.map((row, rowIndex) => (
-                    <div key={`canvas-row-${rowIndex}`} className="flex items-center gap-2">
-                      {row.map((image, imageIndex) => (
-                        <div
-                          key={`${image.src}-${imageIndex}`}
-                          className={`relative h-16 w-20 flex-none overflow-hidden rounded-md bg-neutral-200 shadow-sm ring-2 ring-white transition-transform hover:z-10 hover:scale-110 sm:h-20 sm:w-24 ${image.tilt}`}
-                        >
-                          <Image
-                            src={image.src}
-                            alt={image.alt}
-                            fill
-                            sizes="96px"
-                            className={`object-cover ${image.src === "/images/canvas18.png" ? "object-top" : ""}`}
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </section>
-
             {/* Upcoming Activities & Note Articles */}
             <section className="mt-6">
               <h2 className="text-xl font-medium">今後の活動</h2>
@@ -225,7 +171,12 @@ export default function HomePageJa() {
                     </a>
                 </li>
               </ul>
-              <p className="mt-6 text-sm leading-6 text-neutral-700">
+            </section>
+
+            {/* Past App Projects */}
+            <section className="mt-6">
+              <h2 className="text-xl font-medium">過去に開発したアプリ</h2>
+              <p className="mt-2 text-sm leading-6 text-neutral-700">
                 <Link href="https://projectfluence.vercel.app" target="_blank" rel="noopener noreferrer" className="font-medium underline">
                   Project Fluence
                 </Link>

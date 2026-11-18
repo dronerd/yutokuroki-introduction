@@ -3,33 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import LanguageToggle from "./components/LanguageToggle"; // client component
 
-const profileCanvasRows = [
-  [
-    { src: "/images/canvas1.jpg", alt: "Yuto Kuroki canvas image 1", tilt: "-rotate-3" },
-    { src: "/images/canvas2.JPEG", alt: "Yuto Kuroki canvas image 2", tilt: "rotate-2" },
-    { src: "/images/canvas3.JPG", alt: "Yuto Kuroki canvas image 3", tilt: "-rotate-1" },
-    { src: "/images/canvas4.JPG", alt: "Yuto Kuroki canvas image 4", tilt: "rotate-3" },
-    { src: "/images/canvas5.JPG", alt: "Yuto Kuroki canvas image 5", tilt: "-rotate-2" },
-    { src: "/images/canvas6.png", alt: "Yuto Kuroki canvas image 6", tilt: "rotate-2" },
-    { src: "/images/canvas7.JPG", alt: "Yuto Kuroki canvas image 7", tilt: "-rotate-3" },
-  ],
-  [
-    { src: "/images/canvas8.JPG", alt: "Yuto Kuroki canvas image 8", tilt: "rotate-1" },
-    { src: "/images/canvas9.JPG", alt: "Yuto Kuroki canvas image 9", tilt: "-rotate-2" },
-    { src: "/images/canvas10.JPG", alt: "Yuto Kuroki canvas image 10", tilt: "rotate-3" },
-    { src: "/images/canvas11.png", alt: "Yuto Kuroki canvas image 11", tilt: "-rotate-1" },
-    { src: "/images/canvas12.JPG", alt: "Yuto Kuroki canvas image 12", tilt: "rotate-2" },
-    { src: "/images/canvas13.JPG", alt: "Yuto Kuroki canvas image 13", tilt: "-rotate-3" },
-    { src: "/images/canvas14.jpg", alt: "Yuto Kuroki canvas image 14", tilt: "rotate-1" },
-  ],
-  [
-    { src: "/images/canvas15.jpg", alt: "Yuto Kuroki with outdoor sculptures", tilt: "-rotate-2" },
-    { src: "/images/canvas16.jpg", alt: "Yuto Kuroki beside a research poster", tilt: "rotate-2" },
-    { src: "/images/canvas17.jpg", alt: "Yuto Kuroki looking at an aquarium tank", tilt: "-rotate-1" },
-    { src: "/images/canvas18.png", alt: "Yuto Kuroki during a gait experiment in a research lab", tilt: "rotate-2" },
-  ],
-];
-
 export const metadata = {
   title: "Yuto Kuroki",
   description: "Profile page of Yuto Kuroki, second-year computer science student at Waseda University working in AI research and development",
@@ -166,35 +139,6 @@ export default function HomePageEn() {
               </div>
             </section>
 
-            {/* Photo Canvas */}
-            <section className="mt-6">
-              <h2 className="text-xl font-medium">
-                <strong>Photo Canvas</strong>
-              </h2>
-              <div className="mt-3 max-w-3xl rounded-lg bg-white px-3 py-4 shadow-sm">
-                <div className="space-y-2 overflow-x-auto py-1">
-                  {profileCanvasRows.map((row, rowIndex) => (
-                    <div key={`canvas-row-${rowIndex}`} className="flex items-center gap-2">
-                      {row.map((image, imageIndex) => (
-                        <div
-                          key={`${image.src}-${imageIndex}`}
-                          className={`relative h-16 w-20 flex-none overflow-hidden rounded-md bg-neutral-200 shadow-sm ring-2 ring-white transition-transform hover:z-10 hover:scale-110 sm:h-20 sm:w-24 ${image.tilt}`}
-                        >
-                          <Image
-                            src={image.src}
-                            alt={image.alt}
-                            fill
-                            sizes="96px"
-                            className={`object-cover ${image.src === "/images/canvas18.png" ? "object-top" : ""}`}
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </section>
-
             {/* Upcoming Activities & Note Articles */}
             <section className="mt-6">
               <h2 className="text-xl font-medium">
@@ -236,7 +180,12 @@ export default function HomePageEn() {
                     </a>
                 </li>
               </ul>
-              <p className="mt-6 text-sm leading-6 text-neutral-700">
+            </section>
+
+            {/* Past App Projects */}
+            <section className="mt-6">
+              <h2 className="text-xl font-medium">Past Apps I&apos;ve Built</h2>
+              <p className="mt-2 text-sm leading-6 text-neutral-700">
                 <Link href="https://projectfluence.vercel.app" target="_blank" rel="noopener noreferrer" className="font-medium underline">
                   Project Fluence
                 </Link>{" "}

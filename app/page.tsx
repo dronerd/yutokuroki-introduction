@@ -164,22 +164,6 @@ export default function HomePageEn() {
                   I have reached a near-native advanced level in both English and German. I hope to use these language skills to collaborate with researchers from diverse backgrounds and pursue AI research that benefits society.
                 </p>
               </div>
-              <br/>
-
-              <h2 className="text-xl font-medium flex items-center gap-2">
-                <strong>Project Fluence</strong>
-
-                <Link href="https://projectfluence.vercel.app" aria-label="Project Fluence" target="_blank" className="ml-2">
-                  <Image src="/images/logo.png" alt="Project Fluence logo" width={80} height={80} className="rounded-md object-cover" />
-                </Link>
-              </h2>
-
-              <p className="mt-3 leading-7 text-neutral-800 text-sm sm:text-base">
-                <Link aria-label="Project Fluence" href="https://projectfluence.vercel.app" className="underline" target="_blank">
-                  <strong>Project Fluence</strong>
-                </Link>{" "}
-                is an English learning platform built on my own experience and methods for learning English. I developed it to help more people in Japan take on opportunities around the world by using their English skills and individual expertise. Please take a look!
-              </p>
             </section>
 
             {/* Photo Canvas */}
@@ -211,8 +195,17 @@ export default function HomePageEn() {
               </div>
             </section>
 
-            {/* Note Articles */}
+            {/* Upcoming Activities & Note Articles */}
             <section className="mt-6">
+              <h2 className="text-xl font-medium">
+                <strong>Upcoming Activities</strong>
+              </h2>
+              <ul className="mt-3 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
+                <li>
+                  <strong>Nakatani ARIP Scholar</strong> — Selected as a scholar; plan to conduct research at the German Research Center for Artificial Intelligence (DFKI) from February 2 to April 7, 2027
+                </li>
+              </ul>
+
               <h2 className="mt-6 text-xl font-medium">
                 <strong>note articles</strong>
               </h2>
@@ -243,6 +236,12 @@ export default function HomePageEn() {
                     </a>
                 </li>
               </ul>
+              <p className="mt-6 text-sm leading-6 text-neutral-700">
+                <Link href="https://projectfluence.vercel.app" target="_blank" rel="noopener noreferrer" className="font-medium underline">
+                  Project Fluence
+                </Link>{" "}
+                — An English learning platform I developed.
+              </p>
             </section>
 
             {/* Research & Awards */}
@@ -257,9 +256,6 @@ export default function HomePageEn() {
                 </li>
                 <li>
                   Selected for the <strong>Nakatani RIES Best Poster Presentation Award</strong>
-                </li>
-                <li>
-                  <strong>Nakatani ARIP Scholar</strong> — Selected as a scholar; plan to conduct research at the German Research Center for Artificial Intelligence (DFKI) from February 2 to April 7, 2027
                 </li>
                 <li>
                   <a

@@ -159,21 +159,6 @@ export default function HomePageJa() {
                   英語とドイツ語は、ともにネイティブに近い上級レベルまで習得しています。これらの語学力を生かし、多様な背景を持つ研究者と協働しながら、社会に役立つAIの研究に挑戦していきたいと考えています。
                 </p>
               </div>
-              <br />
-
-              <h2 className="text-xl font-medium flex items-center gap-2">
-                <strong>Project Fluence</strong>
-                <Link href="https://projectfluence.vercel.app" aria-label="Project Fluence" target="_blank" className="ml-2">
-                  <Image src="/images/logo.png" alt="Project Fluence ロゴ" width={80} height={80} className="rounded-md object-cover" />
-                </Link>
-              </h2>
-
-              <p className="mt-3 leading-7 text-neutral-800 text-sm sm:text-base">
-                <Link aria-label="Project Fluence" href="https://projectfluence.vercel.app" className="underline" target="_blank">
-                  <strong>Project Fluence</strong>
-                </Link>
-                は私の英語学習ノウハウを活用した英語学習のプラットフォームです。英語力とそれぞれの専門性を活かし、日本から世界へ挑戦する人を増やすことを目指し、開発しました。ぜひご覧ください！
-              </p>
             </section>
 
             {/* Photo Canvas */}
@@ -203,8 +188,15 @@ export default function HomePageJa() {
               </div>
             </section>
 
-            {/* Note Articles */}
+            {/* Upcoming Activities & Note Articles */}
             <section className="mt-6">
+              <h2 className="text-xl font-medium">今後の活動</h2>
+              <ul className="mt-3 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
+                <li>
+                  <strong>Nakatani ARIP奨学生</strong>に選出 — 2027年2月2日から4月7日までドイツ人工知能研究所（DFKI）で研究を行う予定
+                </li>
+              </ul>
+
               <h2 className="mt-6 text-xl font-medium">note記事</h2>
               <ul className="mt-2 list-disc pl-6 text-neutral-800 text-sm sm:text-base">
                 <li key="note Article1" className="py-0.5">
@@ -233,6 +225,12 @@ export default function HomePageJa() {
                     </a>
                 </li>
               </ul>
+              <p className="mt-6 text-sm leading-6 text-neutral-700">
+                <Link href="https://projectfluence.vercel.app" target="_blank" rel="noopener noreferrer" className="font-medium underline">
+                  Project Fluence
+                </Link>
+                は、私が開発した英語学習プラットフォームです。
+              </p>
             </section>
 
             {/* Research & Awards */}
@@ -244,9 +242,6 @@ export default function HomePageJa() {
                 </li>
                 <li>
                   <strong>Nakatani RIES Best Poster Presentation Award</strong>に選出
-                </li>
-                <li>
-                  <strong>Nakatani ARIP奨学生</strong>に選出 — 2027年2月2日から4月7日までドイツ人工知能研究所（DFKI）で研究を行う予定
                 </li>
                 <li>
                   <a href="https://isef.net/project/robo024-novel-medical-drone-delivery-using-k-means-and-tsp" target="_blank" rel="noopener noreferrer" className="underline">

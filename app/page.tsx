@@ -401,6 +401,7 @@ export default function HomePageEn() {
                   </a>
                 </li>
                 <li>August 2025 さぴあ magazine</li>
+                <li>Waseda University Senior High School brochures, 2025 and 2028</li>
                 <li>
                   <a href="https://www.youtube.com/watch?v=Vlgrx-uviHo" target="_blank" rel="noopener noreferrer" className="underline">
                     PASCH Goethe Institut official YouTube

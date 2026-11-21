@@ -377,6 +377,7 @@ export default function HomePageJa() {
                   </a>
                 </li>
                 <li>さぴあ2025年8月号「母校を語る」</li>
+                <li>早稲田大学高等学院 学校案内パンフレット2025、2028</li>
                 <li>
                   <a href="https://www.youtube.com/watch?v=Vlgrx-uviHo" target="_blank" rel="noopener noreferrer" className="underline">
                     PASCH ゲーテ・インスティトゥート公式YouTube
